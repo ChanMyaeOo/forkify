@@ -1,5 +1,9 @@
 import { elements } from './base';
 
+export const clearShoppingItem = () => {
+  elements.item.innerHTML = '';
+};
+
 export const renderItem = item => {
   const markUp = `
     <li class="shopping__item" data-itemid=${item.id}>
